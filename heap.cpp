@@ -13,6 +13,7 @@ class maxHeap{
             int parent = idx/2;
             if(arr[parent] < arr[idx]){
                 swap(arr[idx],arr[parent]);
+                idx = parent;
             }
             else return;
         }
